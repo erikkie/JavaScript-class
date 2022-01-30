@@ -121,9 +121,10 @@ function assignments() {
 function dataTypes() {
     // create samples of each of the data types from the
     // index page and display them in the Data Types section
-    const games = { rpgGame : "Skyrim", puzzleGame : "Portal", cozyGame : "Animal Crossing",};
-    document.getElementById("array").innerHTML = games;
+    const fish = ["Bumble Bee Gobis", "Pleco", "Betta"]
+        document.getElementById("Fish").innerHTML = fish;
 
-    document.getElementById("object").innerHTML = games.rpgGame + " is an example of a RPG game, while " + games.puzzleGame + " is an example of a puzzle game and " + games.cozyGame + " is an example of a cozy game.";
+    const games = { rpgGame : "Skyrim", puzzleGame : "Portal", cozyGame : "Animal Crossing",};
+    document.getElementById("Games").innerHTML = games.rpgGame + " is an example of a RPG game, while " + games.puzzleGame + " is an example of a puzzle game and " + games.cozyGame + " is an example of a cozy game.";
 }
 
