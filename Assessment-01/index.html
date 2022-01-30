@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -69,4 +70,77 @@
     </footer>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding JavaScript to HTML</title>
+    <link rel="stylesheet" href="css/styles.css">
+<script>
+    function gameRules(){
+        document.getElementById("games").innerHTML="You must identify the object that is unrelated to the others"
+    }
+</script>
+<script src="scripts/script.js">
+</script>
+</head>
+
+<body>
+    <header>
+        <h1>One of These Things i not Like the Other</h1>
+    </header>
+    <main>
+
+        <button type = "button" onclick="gameRules()">Game Rules</button>
+        <button type = "button" onclick="gameRules2()">Game Answer</button>
+        <p id="start"></p>
+        <script>
+            document.getElementById("start").innerHTML="JavaScript inside the script tag."
+        </script>
+        <p id="games">
+            Select One of the Images below and guess!
+        </p>
+        
+        <button type="button" onclick="colorChange1()">Hide Answer / Change Button Color</button>
+        <button type= "button" onclick="colorChange()">Reveal / Reset Button Color</button>
+
+        <div class="buttons">
+            <button onclick="document.getElementById('house').src='images/iconmonstr-building-1-240.png' ">Doghouse</button>
+            <button onclick="document.getElementById('house').src='images/iconmonstr-fast-food-12-240.png' ">Hot Dog</button>
+            <button onclick="document.getElementById('house').src='images/iconmonstr-cat-3-240.png' ">Cat</button>
+            <button onclick="document.getElementById('house').style.display='block' ">Appear</button>
+            <button onclick="document.getElementById('house').style.display='none' ">Be gone</button>
+            <button type = "button" onclick="sizeSmall()">Small</button>
+            <button type = "button" onclick="sizeBig()">Big</button>
+        </div>
+
+        <img src="images/iconmonstr-building-1-240.png" alt="doghouse" id="house" class="center">
+        
+
+        
+
+        <div id="output">
+            <h2>Output</h2>
+            <script>
+                document.write("document.write")
+            
+
+    
+            <script>
+                console.log("There's an Easter Egg in the log")
+            </script>
+
+          
+        </div>
+    </main>
+    <footer>
+        <p>&copy;2022 Meri Engel</p>
+    </footer>
+</body>
+
+>>>>>>> 4673c1571d784dcc3e003b45ed5b1edda295e362
 </html>

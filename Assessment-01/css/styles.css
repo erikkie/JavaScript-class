@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --purple:#4500AD;
     --darkpurple:#560069;
@@ -44,4 +45,52 @@ align-content: center;
    margin:30px auto;
 
 
+=======
+:root {
+    --purple:#4500AD;
+    --darkpurple:#560069;
+    --gold:#F09622;
+
+
+}
+
+
+
+main{
+  width:100%;
+  padding:50px;
+  box-sizing:border-box;
+  width: 100%;
+  min-width: initial;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header{
+    background-color:var(--purple);
+    padding:50px;
+}
+
+h1{
+  color:#fff;
+  font-size: 24px;
+  font-family: sans-serif;
+  margin-bottom:20px;
+  text-align: center;
+
+}
+
+.buttons button, button{
+   background-color: var(--purple);
+   color:#fff;
+   padding:15px 30px;
+   font-family: sans-serif;
+   text-transform: uppercase;
+   border:0px;
+align-content: center;
+   margin:30px auto;
+
+
+>>>>>>> 4673c1571d784dcc3e003b45ed5b1edda295e362
 }
