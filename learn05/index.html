@@ -13,58 +13,88 @@
 <body onload = "addDate()">
 
     <header>
-        <h1>JavaScript and Forms</h1>
+        <h1>Custom Menu Orders</h1>
     </header>
     <main class="container">
         <form>
-            <div class="top">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="fname"><br>
+            <div class="menutop">
+                <p id ="myDate"></p>
+                <label for="ordername">Name for the Order:</label>
+                <input type="text" id="ordername" name="fname"><br>
                 <p id="today"></p>
                 <p>&nbsp;</p>
-                <p id ="myDate"></p>
-                <label for="rooms">How Many Rooms:</label>
-                <select id="rooms" name="rooms" onchange = "showScreen()">
-                    <option value="1" >one</option>
-                    <option value="2">two</option>
-                    <option value="3">three</option>
-                </select>
+                
+                
             </div>
 
-            <div class="room" id="room1">
-                <h3>Room 1</h3>
-                <label for="rm1Length">Room one length:</label>
-                <input type="text" id="rm1length"/> <br/>
-                <label for="rm1width">Room one width:</label>
-                <input type="text" id="rm1width" /> <br/>
-                <label for="rm1height">Room one height:</label>
-                <input type="text" id="rm1height" /> <br/>
-                <label for="rm1cost">Room one cost:</label>
-                <input type="text" id="rm1cost" /> <br/>
+            <div class="fooditems" id="drinks">
+                <h3>Drink Options</h3>
+                
+                    <input type="text" id="doc" />
+                    <label for="doc">Dr.Pepper</label><br>
+                    
+                    <input type="text" id="fanta" />
+                     <label for="fanta">Fanta</label><br>
+                    
+                     <input type="text" id="ginger" />
+                    <label for="ginger">Gingerale</label><br>
+                    
+                    <input type="text" id="sprite" />
+                    <label for="sprite">Sprite</label><br>
+                    
+                    <input type="text" id="manzanita" />
+                    <label for="manzanita">Manzanita Sol</label><br>
+                    
+                    <input type="text" id="drinkcost" /> <br/><br/>
             </div>
 
-            <div class="room" id="room2">
-                <h3>Room 2</h3>
-                <label for="rm2Length">Room Two length:</label>
-                <input type="text" id="rm2length" /> <br/>
-                <label for="rm2width">Room Two width:</label>
-                <input type="text" id="rm2width" /> <br/>
-                <label for="rm2height">Room Two height:</label>
-                <input type="text" id="rm2height" /> <br/>
-                <label for="rm2cost">Room Two cost:</label>
-                <input type="text" id="rm2cost" /> <br/>
+            <div class="fooditems" id="sandwich">
+                <h3>Sandwich Options</h3>
+                
+                    <input type="text" id="blt" />
+                    <label for="blt">BLT</label><br>
+
+                    <input type="text" id="veggie" />
+                    <label for="veggie">Veggie Sub</label><br>
+
+                    <input type="text" id="reuben" />
+                    <label for="reuben">Reuben Sub</label><br>
+
+                    <input type="text" id="turkey" />
+                    <label for="turkey">Turkey Sub</label><br>
+
+                    <input type="text" id="tuna" />
+                    <label for="tuna">Tuna Sub</label><br>
+
+
+                    <input type="text" id="subcost" /> <br/><br>
+
             </div>
 
-            <div class="room" id="room3">
-                <h3>Room 3</h3>
-                <label for="rm3Length">Room Three length:</label>
-                <input type="text" id="rm3length" /> <br/>
-                <label for="rm3width">Room Three width:</label>
-                <input type="text" id="rm3width" /> <br/>
-                <label for="rm3height">Room Three height:</label>
-                <input type="text" id="rm3height" /> <br/>
-                <label for="rm3cost">Room Three cost:</label>
-                <input type="text" id="rm3cost" /> <br/>
+
+            <div class="fooditems" id="dessert">
+                <h3>Dessert Options</h3>
+
+                    <input type="text" id="vanilla" />
+                    <label for="vanilla">Vanilla Milkshake</label><br>
+
+                    <input type="text" id="choco" />
+                    <label for="choco">Chocolate Milkshake</label><br>
+
+                    <input type="text" id="swirl" />
+                    <label for="swirl">Swirl Milkshake</label><br>
+                    
+                    <input type="text" id="strawberry" />
+                    <label for="strawberry">Strawberry Milkshake</label><br>
+
+                    <input type="text" id="oreo" />
+                    <label for="oreo">Oreo Milkshake</label><br>
+
+
+                    <input type="text" id="dessertcost" /> <br/><br>
+
+
+
 
             </div>
 
@@ -72,8 +102,8 @@
         </form>
         <div class="bottom">
             <button type=button onclick="estimate()">Get Estimate!</button>
-            <h3>Estimate:</h3>
-            <p id="estimate"></p>
+            <h3>Order Cost:</h3>
+            <p id="ordercost"></p>
           
         </div>
     </main>

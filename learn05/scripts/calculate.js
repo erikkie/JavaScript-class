@@ -2,27 +2,31 @@ function addDate() {
     let today = new Date();
     document.getElementById("myDate").innerHTML = today;
 
-    document.getElementById("name").value = "";
-    document.getElementById("rm1length").value = "";
-    document.getElementById("rm1width").value = "";
-    document.getElementById("rm1height").value = "";
-    document.getElementById("rm1cost").value = "";
- 
-    document.getElementById("rm2length").value = "";
-    document.getElementById("rm2width").value = "";
-    document.getElementById("rm2height").value = "";
-    document.getElementById("rm2cost").value = "";
-  
-    document.getElementById("rm3length").value = "";
-    document.getElementById("rm3width").value = "";
-    document.getElementById("rm3height").value = "";
-    document.getElementById("rm3cost").value = "";
+    document.getElementById("ordername").value = "";
 
-    document.getElementById("rooms").value = "1";
+    document.getElementById("doc").value = "";
+    document.getElementById("fanta").value = "";
+    document.getElementById("ginger").value = "";
+    document.getElementById("sprite").value = "";
+    document.getElementById("manzanita").value = "";
+ 
+    document.getElementById("blt").value = "";
+    document.getElementById("veggie").value = "";
+    document.getElementById("reuben").value = "";
+    document.getElementById("turkey").value = "";
+    document.getElementById("tuna").value = "";
+  
+    document.getElementById("vanilla").value = "";
+    document.getElementById("choco").value = "";
+    document.getElementById("swirl").value = "";
+    document.getElementById("strawberry").value = "";
+    document.getElementById("oreo").value = "";
+
+   
 
 }
 
-function showScreen() {
+/*function showScreen() {
     numRooms = document.getElementById("rooms").value;
     if (numRooms == 1) {
         document.getElementById("room2").style.display = "none";
@@ -38,32 +42,46 @@ function showScreen() {
     }
 
 }
+*/
 
-function estimate() {   
- 
-    let name = document.getElementById("name").value;
-    let length1 = parseFloat(document.getElementById("rm1length").value);
-    let width1 = parseFloat(document.getElementById("rm1width").value);
-    let height1 = parseFloat(document.getElementById("rm1height").value);
-    let totalSqFt1 = (length1 * height1 * 2) + (length1 * width1 * 2);
-    let cost1 = (totalSqFt1 * .65);
-    document.getElementById("rm1cost").value = cost1;
-    
-    let length2 = parseFloat(document.getElementById("rm2length").value);
-    let width2 = parseFloat(document.getElementById("rm2width").value);
-    let height2 = parseFloat(document.getElementById("rm2height").value);
-    let totalSqFt2 = (length2 * height2 * 2) + (length2 * width2 * 2);
-    let cost2 = (totalSqFt2 * .93);
-    document.getElementById("rm2cost").value = cost2;
-    
-    let length3 = parseFloat(document.getElementById("rm3length").value);
-    let width3 = parseFloat(document.getElementById("rm3width").value);
-    let height3 = parseFloat(document.getElementById("rm3height").value);
-    let totalSqFt3 = (length3 * height3 * 2) + (length3 * width3 * 2);
-    let cost3 = (totalSqFt3 * .85);
-    document.getElementById("rm3cost").value = cost3;
+function estimate() { 
 
-    numRooms = document.getElementById("rooms").value;
+    let name = document.getElementById("ordername").value;
+
+    /*these are the drinks getting called and setting up variables for the Id's*/
+    let doc1 = parseFloat(document.getElementById("doc").value);
+    let fanta1 = parseFloat(document.getElementById("fanta").value);
+    let ginger1 = parseFloat(document.getElementById("ginger").value);
+    let sprite1 = parseFloat(document.getElementById("sprite").value);
+    let manzanita1 = parseFloat(document.getElementById("manzanita").value);
+    /*adding up the amount of each drinks ordered by the user*/
+    let totalSqFt1 = doc1 + fanta1 + ginger1 + sprite1 + manzanita1;
+    let cost1 = (totalSqFt1 * 2.00);
+    document.getElementById("drinkcost").value = cost1;
+    
+     /*these are the sandwiches getting called and setting up variables for the Id's*/
+    let blt2 = parseFloat(document.getElementById("blt").value);
+    let veggie2 = parseFloat(document.getElementById("veggie").value);
+    let reuben2 = parseFloat(document.getElementById("reuben").value);
+    let turkey2 = parseFloat(document.getElementById("turkey").value);
+    let tuna2 = parseFloat(document.getElementById("tuna").value);
+    /*adding up the amount of each drinks ordered by the user*/
+    let totalSqFt2 = blt2 + veggie2 + reuben2 + turkey2 + tuna2;
+    let cost2 = (totalSqFt2 * 3.00);
+    document.getElementById("subcost").value = cost2;
+    
+    /*these are the sandwiches getting called and setting up variables for the Id's*/
+    let vanilla3 = parseFloat(document.getElementById("vanilla").value);
+    let choco3 = parseFloat(document.getElementById("choco").value);
+    let swirl3 = parseFloat(document.getElementById("swirl").value);
+    let strawberry3 = parseFloat(document.getElementById("strawberry").value);
+    let oreo3 = parseFloat(document.getElementById("oreo").value);
+
+    let totalSqFt3 =  vanilla3 + choco3 + swirl3 + strawberry3 + oreo3;
+    let cost3 = (totalSqFt3 * 1.50);
+    document.getElementById("dessertcost").value = cost3;
+
+    /*numRooms = document.getElementById("rooms").value;
     if (numRooms == 1) {
         var totalCost = cost1;
     }
@@ -73,5 +91,7 @@ function estimate() {
     else if (numRooms == 3) {
         var totalCost = cost1 + cost2 + cost3;
     }
+    */
+
     document.getElementById("estimate").innerHTML = (name + ",  your estimate is: $ " + totalCost);
 }
