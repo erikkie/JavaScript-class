@@ -20,10 +20,8 @@
             <div class="menutop">
                 <p id ="myDate"></p>
                 <label for="ordername">Name for the Order:</label>
-                <input type="text" id="ordername" name="fname"><br>
-                <p id="today"></p>
-                <p>&nbsp;</p>
-                
+                <input type="text" id="ordername" name="ordername"><br>
+                <p id="today"></p>                     
                 
             </div>
 
@@ -45,6 +43,8 @@
                     <input type="text" id="manzanita" />
                     <label for="manzanita">Manzanita Sol</label><br>
                     
+                    <br>
+                    <label for="drinkcost">Total Drink Cost</label><br>
                     <input type="text" id="drinkcost" /> <br/><br/>
             </div>
 
@@ -66,7 +66,8 @@
                     <input type="text" id="tuna" />
                     <label for="tuna">Tuna Sub</label><br>
 
-
+                    <br>
+                    <label for="subcost">Total Sandwich Cost</label><br>
                     <input type="text" id="subcost" /> <br/><br>
 
             </div>
@@ -90,18 +91,15 @@
                     <input type="text" id="oreo" />
                     <label for="oreo">Oreo Milkshake</label><br>
 
-
+                    <br>
+                    <label for="dessertcost">Total Dessert Cost</label><br>
                     <input type="text" id="dessertcost" /> <br/><br>
-
-
-
-
             </div>
-
-            
         </form>
+
+
         <div class="bottom">
-            <button type=button onclick="estimate()">Get Estimate!</button>
+            <button type=button onclick="estimate()">Review Order</button>
             <h3>Order Cost:</h3>
             <p id="ordercost"></p>
           

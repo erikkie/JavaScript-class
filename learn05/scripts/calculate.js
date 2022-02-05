@@ -92,6 +92,6 @@ function estimate() {
         var totalCost = cost1 + cost2 + cost3;
     }
     */
-
-    document.getElementById("estimate").innerHTML = (name + ",  your estimate is: $ " + totalCost);
+var totalCost = cost1 + cost2 + cost3;
+    document.getElementById("ordercost").innerHTML = (name + ",  your estimate is: $ " + totalCost);
 }
