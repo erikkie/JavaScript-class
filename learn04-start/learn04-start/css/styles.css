@@ -274,7 +274,7 @@ p {
 
 #room2,
 #room3 {
-    display: block;
+    display: none;
 }
 
 .top,
