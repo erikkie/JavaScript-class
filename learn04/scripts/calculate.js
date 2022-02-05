@@ -45,6 +45,7 @@ function estimate() {
     let length1 = parseFloat(document.getElementById("rm1length").value);
     let width1 = parseFloat(document.getElementById("rm1width").value);
     let height1 = parseFloat(document.getElementById("rm1height").value);
+
     let totalSqFt1 = (length1 * height1 * 2) + (length1 * width1 * 2);
     let cost1 = (totalSqFt1 * .65);
     document.getElementById("rm1cost").value = cost1;
@@ -52,6 +53,7 @@ function estimate() {
     let length2 = parseFloat(document.getElementById("rm2length").value);
     let width2 = parseFloat(document.getElementById("rm2width").value);
     let height2 = parseFloat(document.getElementById("rm2height").value);
+
     let totalSqFt2 = (length2 * height2 * 2) + (length2 * width2 * 2);
     let cost2 = (totalSqFt2 * .93);
     document.getElementById("rm2cost").value = cost2;
@@ -59,6 +61,7 @@ function estimate() {
     let length3 = parseFloat(document.getElementById("rm3length").value);
     let width3 = parseFloat(document.getElementById("rm3width").value);
     let height3 = parseFloat(document.getElementById("rm3height").value);
+
     let totalSqFt3 = (length3 * height3 * 2) + (length3 * width3 * 2);
     let cost3 = (totalSqFt3 * .85);
     document.getElementById("rm3cost").value = cost3;
