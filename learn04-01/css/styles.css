@@ -216,17 +216,58 @@ header {
     background: var(--primary);
     color: var(--text-light);
     min-height: 80px;
-    text-align: center;
+    text-align: left;
+    border-bottom: 4px solid #B0B0DC;
 }
 
+header h1{
+    padding:30px 0px 0px 30px;
+
+}
+
+header h3{
+    color:#B0B0DC;
+    padding:0px 0px 35px 30px;
+
+}
+
+.menu-items{
+width:100%;
+
+}
+
+
+#ordername input {
+    width:60px;
+}
+.fooditems {
+   border:2px solid #8559da;
+   padding:25px;
+   box-sizing: border-box;
+   margin:40px 0px;
+   width:31%;
+   height:420px;
+   display: content;
+   
+
+}
+
+
+
+.fooditems input{
+    width:50px !important;
+    margin-right:15px;
+    box-sizing:border-box;
+
+}
 nav {
     text-align: center;
 }
 
 h2 {
     color: var(--primary);
-    text-align: center;
-    margin: 20px;
+    text-align: left;
+    margin:0px;
 }
 
 h1 {
@@ -238,7 +279,7 @@ h2 {
 }
 
 h3 {
-    text-align: left;
+    text-align: left !important;
     color: var(--primary);
     font-weight: bold;
 }
@@ -250,10 +291,14 @@ h3 {
 }
 
 button {
+    font-size:18px;
     color: var(--text-light);
     border: 2px solid var(--primary-dark);
     background: var(--primary-dark);
     text-decoration: none;
+    padding: 15px;
+    float:left;
+    
 }
 
 button:hover {
@@ -262,7 +307,7 @@ button:hover {
 }
 
 p {
-    padding: 10px;
+   
 }
 
 .room {
@@ -277,8 +322,11 @@ p {
     display: none;
 }
 
-.top,
-.bottom {
+.bottom{
+    5px 0px;
+}
+
+.top {
     margin: 25px 30px;
     text-align: center;
 }
