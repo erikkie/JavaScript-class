@@ -28,7 +28,6 @@ function start() {
 
     document.getElementById("first").innerHTML = name.slice(0,5); 
      
-
     // Use the Javascript substring Method to display your middle name to the middle paragraph
     document.getElementById("middle").innerHTML = name.substring(6,15);
 
@@ -39,31 +38,41 @@ function start() {
     // replacing string content - in the following variable use the replace method to put your major 
     // in a new string and print to the major paragraph
     
-    function myMajor() {
-      let myMajor = document.getElementById("major").innerHTML; 
-      document.getElementById("major").innerHTML =  myMajor.replace("Microsoft","W3Schools");
-    }
-    
-        
-
-
     // convert the following variable to upper case then print to the upper paragraph
-    let myText = "It\'s a great day to be alive!"
-
+   
+    
     // Use the trim() method to remove white spaces from the following variable and print to the
     // trim paragraph
-    let trimText = "                  McHenry County College                "
 
+    let trimText = "                  McHenry County College                ";
+    let text7 = trimText.trim();
+    
+ document.getElementById("trim").innerHTML =
+    "Length trim Text=" + trimText.length + " Length2 text7=" + text7.length;
+   
     // use the indexOf() method to get the index of 'May' and print the index number to the index paragraph
 
-    let months = "January, February, March, April, May, June, July, August, September, October, November, December"
+    let months = "January, February, March, April, May, June, July, August, September, October, November, December";
+    let result = months.indexOf("May");
 
-
+    document.getElementById("index").innerHTML = result;
+    
     // JavaScript Template Literals   https://www.w3schools.com/js/js_string_templates.asp
 
     // create a template literals for both your first and last name (name the variables first and last)
+ let first = `Erika`;
+ let last = ` Howell`;
 
+document.getElementById("names").innerHTML = first + last;
 
     // Use Variable substitutions to create a greeting that incorporates your first and last name and 
     // print to the greeting paragraph
+
+let firstName = "Erika";
+let lastName = "Howell";
+
+let greetings = `Good Morning, ${firstName} ${lastName} the earth says hello!`;
+document.getElementById("greeting").innerHTML = greetings;
+
+
 }
