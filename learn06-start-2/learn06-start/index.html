@@ -27,22 +27,47 @@
     <p id="last"></p>
 
     <h2>Major</h2>
-    <button onclick="myMajor()">Find out!</button>
-    <p id="major">What is my major?</p>
+    
+
+<p id="major">Am I majoring in Physical Therapy at MCC?</p>
+
+<button onclick="myMajor()">Found out!</button>
+
 
     <h2>Upper</h2>
-    <p id="upper"></p>
+    <button onclick="upperCase()">LOUDER</button>
+    <p id="upper">It's a great day to be alive!</p>
+   
+
 
     <h2>Trim</h2>
-    <p id="trim"></p>
+    <p id="trim"></p>                
+
+    <h2>Names</h2>
+    <p id="names"></p>
+
 
     <h2>Index</h2>
     <p id="index"></p>
 
-    <h2>Greeting</h2>
-    <p id="greeting">Good Morning, the earth says hello!</p>
+      <h2>Greeting</h2>
+    <p id="greeting"></p>
 
+
+
+    
 </body>
 
 </html>
 
+<script>
+    function myMajor() {
+      let text5 = document.getElementById("major").innerHTML; 
+      document.getElementById("major").innerHTML =
+      text5.replace("Physical Therapy","Graphic Arts");
+    }
+    function upperCase(){
+          let text6 = document.getElementById("upper").innerHTML;
+          document.getElementById("upper").innerHTML = text6.toUpperCase();
+      }
+    </script>
