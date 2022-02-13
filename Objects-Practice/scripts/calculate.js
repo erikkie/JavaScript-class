@@ -18,7 +18,7 @@ const plant2 = {
     material:"Hardscapes",
     carbon:"Rinse rocks and brush with bristle brush to remove debris",
     image:"images/elephant.jpg",
-    source: "https://buceplant.com/collections/aquarium-hardscape/products/elephant-skin-stone"
+    source: "https://buceplant.com/collections/aquarium-hardscape/products/elephant-skin-stone",
 
 
 };

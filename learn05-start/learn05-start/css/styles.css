@@ -352,6 +352,7 @@ p {
     border-radius: 20px;
     padding: 5px;
     min-height: 100px;
+    display:none;
 }
 
 .card img {

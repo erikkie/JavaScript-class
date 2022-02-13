@@ -6,23 +6,39 @@
    License: none (public domain)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .full-row{
     display: flex;
     flex-wrap: wrap;
 }
 .hardscapes .col-s-2{
-   
-  
-   margin:2px;
-  
+    min-height:950px;
 }
 
+.hardscapes h3{
+    background-color:var(--primary);
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hardscapes p {
+    min-height:120px;
+    background-color:#fcfcfc;
+}
 .col-s-2 img{
     
-    max-width:400px;
-    margin:0 auto !important;
-    margin-bottom:15px;
-    max-height:100px;
+    width:100%;
+    margin-top:10px;
+   
+}
+
+.hardscapes h2{
+    margin:20px 0px;
+    font-weight:bold;
+    letter-spacing:1.2px;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 html,
@@ -207,6 +223,8 @@ table {
     }
     .col-s-2 {
         width: 19%;
+        border: 2px solid #ededed;
+        margin:20px 2px;
         
     }
     .col-s-3 {

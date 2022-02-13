@@ -8,7 +8,7 @@
             altTag: "red betta fish on blakc background"
     };
     const betta2 = {
-        heading: "Two Betta",
+        heading: "Two Bright Betta",
         image: "images/betta2.png",
         caption: "Angry Dancing",
         altTag: "two multi-colored betta fish on blakc background"
@@ -20,7 +20,7 @@
         altTag: "two red betta fish on blakc background"
     };
     const betta4 = {
-        heading: "Two Betta",
+        heading: "Two Blue Betta",
         image: "images/betta4.png",
         caption: "Angry Dancer",
         altTag: "two blue betta fish on black background"
@@ -29,18 +29,22 @@
     function chooseBetta(betta) {
         if (betta == 1) {
             document.getElementById("toggle1").style.display = "none";
+            document.getElementById("card1").style.display = "block";
             loadMe(betta1, 1) // 
         }   
         else if(betta == 2){
             document.getElementById("toggle2").style.display = "none";
+            document.getElementById("card2").style.display = "block";
             loadMe(betta2, 2);
         }
         else if(betta == 3){
             document.getElementById("toggle3").style.display = "none";
+            document.getElementById("card3").style.display = "block";
             loadMe(betta3, 3);
         }
         else if(betta == 4){
             document.getElementById("toggle4").style.display = "none";
+            document.getElementById("card4").style.display = "block";
             loadMe(betta4, 4);
            
         }
