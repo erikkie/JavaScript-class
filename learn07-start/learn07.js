@@ -1,5 +1,7 @@
-function start() {
 
+
+function start() {
+        document.getElementById("test-heading").style.color = "#ededed";
     /*
         read/watch the associated reference and complete the directions in the comments.
 
@@ -36,8 +38,8 @@ function start() {
 
     // Demonstrate the use of toExponential()
     let e = 231.9;
-    e.toExponential(2) + <br> +
-    e.toExponential(3) + <br> +
+    e.toExponential(2); 
+    e.toExponential(3);  
     e.toExponential(9);
 
     console.log(e);
@@ -84,14 +86,14 @@ function start() {
     need to do an additional web search to really get it.)
 
     // == is when you are doing equations, and is equal to something else, === is checking if something is the same/identical, so === is strict while == is more relaxed</br>
-    */
+    //
 
     // Watch Arithmetic Operators: https://www.linkedin.com/learning/learning-the-javascript-language-2/arithmetic-operators?autoplay=true&resume=false&u=69317474
     // Watch Logical Operators: https://www.linkedin.com/learning/learning-the-javascript-language-2/logical-operators?autoplay=true&resume=false&u=69317474
     // In a comment describe the order of precedence for and / or operators
 
     /* The order for Arithmetic Operators are  */
-       /*  the following{ ** * / % + -} */
+       //  the following{ ** * / % + -} //
 
        /* The order for And / or Operators are  */
        /*  the following{ & ^ | && || } */
