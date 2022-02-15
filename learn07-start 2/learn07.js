@@ -109,7 +109,7 @@ function start(){
               break;
             case "Orange":
                 console.log("You said orange");
-                break;
+                break; 
             case "Red":
                 console.log("You said red");
                  break;

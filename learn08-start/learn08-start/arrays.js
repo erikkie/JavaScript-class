@@ -53,18 +53,46 @@ function start() {
 
     // use the push function to add two fruits to the array fruits print to the fruits paragraph
     fruits = ["Apple", "Kiwi", "Mango"]
+    document.getElementById("fruits").innerHTML = fruits;
+
+
+        fruits.push("Bananas");
+        document.getElementById("fruits").innerHTML = fruits;
+
+  
 
 
     // use the shift function to add a fruit to the front of the list and print to the fruits2 paragraph
+    fruits2 = [" Apple", "Kiwi", "Mango", "Bananas"]
+    document.getElementById("fruits").innerHTML = fruits2;
+    fruits2.shift("Bananas");
+    document.getElementById("fruits").innerHTML = fruits2;
+
+
 
     // JS Array Sort  https://www.w3schools.com/js/js_array_sort.asp
 
     languages = ["COBOL", "livescript", "C++", "Python", "JavaScript", "Lua", "Basic"]
         // sort the array languages and print to the paragraph sorted
         // reverse the array languages and print to the paragraph reversed
+    document.getElementById("sorted").innerHTML = languages;
+    languages.sort();
+
+    document.getElementById("reversed").innerHTML = languages;
+    languages.reverse();
+
 
     // use the compare function to sort the numbers  and print to the num-sorted paragraph
-    numbers = [42, 23, 21, 50, 20, 6, 31, 9]
+    const numbers = [42, 23, 21, 50, 20, 6, 31, 9];
+    document.getElementById("num-sorted").innerHTML = numbers;
+
+    numbers.sort(function(a, b){return b - a});
+    document.getElementById("num-sorted").innerHTML = numbers;
+
+    
+
+    
+
 
     // Read the Array Iteration page https://www.w3schools.com/js/js_array_iteration.asp 
     // read the Array Const page https://www.w3schools.com/js/js_array_const.asp
