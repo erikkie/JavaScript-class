@@ -5,6 +5,15 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+#hangman1{
+    display:block;
+}
+
+
+#hangman2, #hangman3, #hangman4, #hangman5, #hangman6, #hangman7{
+    
+    display:none;
+}
 
 html,
 body,
