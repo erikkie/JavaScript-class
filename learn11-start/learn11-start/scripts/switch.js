@@ -7,83 +7,96 @@ function calculate() {
     let year = parseInt(document.getElementById("year").value);
 
     switch (month) {
-        case "January":
-            switch(date){
-                case 1:
-                case 2:
-                case 3:
-                case 4:
-                case 5:
-                case 6:
-                case 7:
-                case 8:
-                case 9:
-                case 10:
-                case 11:
-                case 12:
-                case 13:
-                case 14:
-                case 15:
-                case 16:
-                case 17:
-                case 18:
-                case 19:
-                case 20:
-                    zod = "Capricorn"
-                    break;
-                case 21:
-                case 22:
-                case 23:
-                case 24:
-                case 25:
-                case 26:
-                case 27:
-                case 28:
-                case 29:
-                case 30:
-                case 31:
-                    zod = "Aquarius"
-                    break;
-                default:
-                    zod = "Invalid Response.";
-            }        
-        break;
-        case "February":
-            switch(date){
-                case 1:
-                case 2:
-                case 3:
-                case 4:
-                case 5:
-                case 6:
-                case 7:
-                case 8:
-                case 9:
-                case 10:
-                case 11:
-                case 12:
-                case 13:
-                case 14:
-                case 15:
-                case 16:
-                case 17:
-                case 18:
-                    zod = "Aquarius"
-                    break;
-                case 20:
-                case 21:
-                case 22:
-                case 23:
-                case 24:
-                case 25:
-                case 26:
-                case 27:
-                case 28:  
-                    zod = "Pisces"
-                    break;              
-                default:
-                    zod = "Invalid Response.";
-            }
+        case 12:
+            if (date > 21)
+                zod = "Capricorn";
+            else
+                zod = "Sagittarius";
+            break;
+            
+        case 1:
+            if (date > 20)
+                zod = "Aquarius";
+            else
+                zod = "Capricorn";
+            break;
+            
+        case 2:
+            if (date > 19)
+                zod = "Pisces"
+            else
+                zod = "Aquarius"
+            break;
+
+        case 3:
+            if (date > 20)
+                zod = "Aries";
+            else
+                zod = "Pisces";
+            break;
+
+        case 4:
+            if (date > 19)
+                zod = "Taurus";
+            else
+                zod = "Aries";
+            break;
+
+        case 5:
+            if (date > 20)
+                zod = "Gemini";
+            else
+                zod = "Taurus";
+            break;
+
+        case 6:
+            if (date > 20)
+                zod = "Cancer";
+            else
+                zod = "Gemini";
+            break;
+
+        case 7:
+            if (date > 22)
+                zod = "Leo";
+            else
+                zod = "Cancer";
+            break;
+        case 8:
+            if (date > 22)
+                zod = "Gemini";
+            else
+                zod = "Leo";
+            break;
+        case 9:
+            if (date > 22)
+                zod = "Virgo";
+            else
+                zod = "Gemini";
+            break;
+        case 10:
+            if (date > 22)
+                zod = "Libra";
+            else
+                zod = "Virgo";
+            break;
+        case 11:
+            if (date > 22)
+                zod = "Scorpio";
+            else
+                zod = "Libra";
+            break;
+
+        case 12:
+            if (date > 22)
+                zod = "Capricorn";
+            else
+                zod = "Scorpio";
+            break;
+        
+            default:
+                zod = "ReEnter Date";
+            
     }
 
     switch (year) {
@@ -220,7 +233,7 @@ function calculate() {
             chi = "Pig"
             break;
         default:
-            chi = "Sadface";
+            chi = "Invalid Entry, refresh page";
 
 
     }
