@@ -4,48 +4,135 @@ function colorDrop(){
 	document.getElementById("selection").value = "1";
 }
 
-class Palette {
-	constructor (color1, color2, color3, color4, color5, color6){ 
-		this.color1 = color1;
-		this.color2 = color2;
-		this.color3 = color3;
-		this.color4 = color4;
-		this.color5 = color5;
-		this.color6 = color6;
-	}
-}
+const beachPalette = ["#BFABA3", "#2990C2", "#15B3C2", "#ffffff", "#30C2A9", "#C29764"];
+const forestPalette = ["#2A5E56", "#2E694F",  "#4FA166", "#ffffff", "#3B873B", "#3F632C"];
+const kaliedoscopePalette = ["#70115C", "#BDA842",  "#BD309F", "#ffffff", "#1CBDB8", "#91C4C3"];
+const cabinPalette = ["#8F6404", "#995C05",  "#82400A", "#ffffff", "#993205", "#8F1A04"];
+const gasPalette = ["#B61CBA", "#791DC4",  "#3323AD", "#ffffff", "#6180C7",  "#498399"];
+const waterfallPalette = ["#0E5D61", "#65DFE6",  "#1FD7E0", "#ffffff",  "#2B5E61", "#18A6AD"];
 
-const beach = new Palette( '#BFABA3', '#2990C2', '#15B3C2', '', '#30C2A9', '#C29764');
-const forest = new Palette('#2A5E56', '#2E694F',  '#4FA166', '', '#3B873B', '#3F632C');
-const kaliedoscope = new Palette('#70115C', '#BDA842',  '#BD309F', '', '#1CBDB8', '#91C4C3');
-const cabin = new Palette('#8F6404', '#995C05',  '#82400A', '', '#993205', '#8F1A04');
-const gasstationatnight = new Palette('#B61CBA', '#791DC4',  '#3323AD', '', '#6180C7',  '#498399');
-const waterfall = new Palette('#0E5D61', '#65DFE6',  '#1FD7E0', '',  '#2B5E61', '#18A6AD');
-
-beach.swatch = function(){
-	document.getElementById('color1').style.background = this.color1;
-	document.getElementById('color2').style.background = this.color2;
-	document.getElementById('color3').style.background = this.color3;
-	document.getElementById('color4').style.background = this.color4;
-	document.getElementById('color5').style.background = this.color5;
-	document.getElementById('color6').style.background = this.color6;
+function beach(){
+	document.getElementById('color1').style.background = beachPalette[0];
+	document.getElementById('color2').style.background = beachPalette[1];
+	document.getElementById('color3').style.background = beachPalette[2];
+	document.getElementById('color4').style.background = beachPalette[3];
+	document.getElementById('color5').style.background = beachPalette[4];
+	document.getElementById('color6').style.background = beachPalette[5];
+    document.getElementById("select2").style.display = "block";
+    document.getElementById("select3").style.display = "block";
+	document.getElementById("select4").style.display = "block";
+	document.getElementById("select5").style.display = "block";
+	document.getElementById("select6").style.display = "block";
+    document.getElementsByClassName("pcr-button")[0].style.setProperty('--pcr-color', beachPalette[0]);
+    document.getElementsByClassName("pcr-button")[1].style.setProperty('--pcr-color', beachPalette[1]);
+    document.getElementsByClassName("pcr-button")[2].style.setProperty('--pcr-color', beachPalette[2]);
+    document.getElementsByClassName("pcr-button")[3].style.setProperty('--pcr-color', beachPalette[3]);
+    document.getElementsByClassName("pcr-button")[4].style.setProperty('--pcr-color', beachPalette[4]);
+    document.getElementsByClassName("pcr-button")[5].style.setProperty('--pcr-color', beachPalette[5]);
+    
 };
 
-// Palette Functions
+function forest(){
+	document.getElementById('color1').style.background = forestPalette[0];
+	document.getElementById('color2').style.background = forestPalette[1];
+	document.getElementById('color3').style.background = forestPalette[2];
+	document.getElementById('color4').style.background = forestPalette[3];
+	document.getElementById('color5').style.background = forestPalette[4];
+	document.getElementById('color6').style.background = forestPalette[5];
+    document.getElementById("select2").style.display = "block";
+    document.getElementById("select3").style.display = "block";
+	document.getElementById("select4").style.display = "block";
+	document.getElementById("select5").style.display = "block";
+	document.getElementById("select6").style.display = "block";
+    document.getElementsByClassName("pcr-button")[0].style.setProperty('--pcr-color', forestPalette[0]);
+    document.getElementsByClassName("pcr-button")[1].style.setProperty('--pcr-color', forestPalette[1]);
+    document.getElementsByClassName("pcr-button")[2].style.setProperty('--pcr-color', forestPalette[2]);
+    document.getElementsByClassName("pcr-button")[3].style.setProperty('--pcr-color', forestPalette[3]);
+    document.getElementsByClassName("pcr-button")[4].style.setProperty('--pcr-color', forestPalette[4]);
+    document.getElementsByClassName("pcr-button")[5].style.setProperty('--pcr-color', forestPalette[5]);
+};
 
-function choosePalette(){
-	if (choosePalette == 1){
-		beach.swatch;
-	}
-	else if (choosePalette == 2){
-		document.getElementById('color1').style.background = forest.swatch;
-		
-		loadMe(forest, 2);
+function kaliedo(){
+	document.getElementById('color1').style.background = kaliedoscopePalette[0];
+	document.getElementById('color2').style.background = kaliedoscopePalette[1];
+	document.getElementById('color3').style.background = kaliedoscopePalette[2];
+	document.getElementById('color4').style.background = kaliedoscopePalette[3];
+	document.getElementById('color5').style.background = kaliedoscopePalette[4];
+	document.getElementById('color6').style.background = kaliedoscopePalette[5];
+    document.getElementById("select2").style.display = "block";
+    document.getElementById("select3").style.display = "block";
+	document.getElementById("select4").style.display = "block";
+	document.getElementById("select5").style.display = "block";
+	document.getElementById("select6").style.display = "block";
+    document.getElementsByClassName("pcr-button")[0].style.setProperty('--pcr-color', kaliedoscopePalette[0]);
+    document.getElementsByClassName("pcr-button")[1].style.setProperty('--pcr-color', kaliedoscopePalette[1]);
+    document.getElementsByClassName("pcr-button")[2].style.setProperty('--pcr-color', kaliedoscopePalette[2]);
+    document.getElementsByClassName("pcr-button")[3].style.setProperty('--pcr-color', kaliedoscopePalette[3]);
+    document.getElementsByClassName("pcr-button")[4].style.setProperty('--pcr-color', kaliedoscopePalette[4]);
+    document.getElementsByClassName("pcr-button")[5].style.setProperty('--pcr-color', kaliedoscopePalette[5]);
+};
 
-	}
-}
+function cabin(){
+	document.getElementById('color1').style.background = cabinPalette[0];
+	document.getElementById('color2').style.background = cabinPalette[1];
+	document.getElementById('color3').style.background = cabinPalette[2];
+	document.getElementById('color4').style.background = cabinPalette[3];
+	document.getElementById('color5').style.background = cabinPalette[4];
+	document.getElementById('color6').style.background = cabinPalette[5];
+    document.getElementById("select2").style.display = "block";
+    document.getElementById("select3").style.display = "block";
+	document.getElementById("select4").style.display = "block";
+	document.getElementById("select5").style.display = "block";
+	document.getElementById("select6").style.display = "block";
+    document.getElementsByClassName("pcr-button")[0].style.setProperty('--pcr-color', cabinPalette[0]);
+    document.getElementsByClassName("pcr-button")[1].style.setProperty('--pcr-color', cabinPalette[1]);
+    document.getElementsByClassName("pcr-button")[2].style.setProperty('--pcr-color', cabinPalette[2]);
+    document.getElementsByClassName("pcr-button")[3].style.setProperty('--pcr-color', cabinPalette[3]);
+    document.getElementsByClassName("pcr-button")[4].style.setProperty('--pcr-color', cabinPalette[4]);
+    document.getElementsByClassName("pcr-button")[5].style.setProperty('--pcr-color', cabinPalette[5]);
+};
 
+function gas(){
+	document.getElementById('color1').style.background = gasPalette[0];
+	document.getElementById('color2').style.background = gasPalette[1];
+	document.getElementById('color3').style.background = gasPalette[2];
+	document.getElementById('color4').style.background = gasPalette[3];
+	document.getElementById('color5').style.background = gasPalette[4];
+	document.getElementById('color6').style.background = gasPalette[5];
+    document.getElementById("select2").style.display = "block";
+    document.getElementById("select3").style.display = "block";
+	document.getElementById("select4").style.display = "block";
+	document.getElementById("select5").style.display = "block";
+	document.getElementById("select6").style.display = "block";
+    document.getElementsByClassName("pcr-button")[0].style.setProperty('--pcr-color', gasPalette[0]);
+    document.getElementsByClassName("pcr-button")[1].style.setProperty('--pcr-color', gasPalette[1]);
+    document.getElementsByClassName("pcr-button")[2].style.setProperty('--pcr-color', gasPalette[2]);
+    document.getElementsByClassName("pcr-button")[3].style.setProperty('--pcr-color', gasPalette[3]);
+    document.getElementsByClassName("pcr-button")[4].style.setProperty('--pcr-color', gasPalette[4]);
+    document.getElementsByClassName("pcr-button")[5].style.setProperty('--pcr-color', gasPalette[5]);
+};
 
+function waterfall(){
+	document.getElementById('color1').style.background = waterfallPalette[0];
+	document.getElementById('color2').style.background = waterfallPalette[1];
+	document.getElementById('color3').style.background = waterfallPalette[2];
+	document.getElementById('color4').style.background = waterfallPalette[3];
+	document.getElementById('color5').style.background = waterfallPalette[4];
+	document.getElementById('color6').style.background = waterfallPalette[5];
+    document.getElementById("select2").style.display = "block";
+    document.getElementById("select3").style.display = "block";
+	document.getElementById("select4").style.display = "block";
+	document.getElementById("select5").style.display = "block";
+	document.getElementById("select6").style.display = "block";
+    document.getElementsByClassName("pcr-button")[0].style.setProperty('--pcr-color', waterfallPalette[0]);
+    document.getElementsByClassName("pcr-button")[1].style.setProperty('--pcr-color', waterfallPalette[1]);
+    document.getElementsByClassName("pcr-button")[2].style.setProperty('--pcr-color', waterfallPalette[2]);
+    document.getElementsByClassName("pcr-button")[3].style.setProperty('--pcr-color', waterfallPalette[3]);
+    document.getElementsByClassName("pcr-button")[4].style.setProperty('--pcr-color', waterfallPalette[4]);
+    document.getElementsByClassName("pcr-button")[5].style.setProperty('--pcr-color', waterfallPalette[5]);
+};
+
+// if extra palettes are needed to be added
 // function colorPalettes(){
 	// document.getElementById('color1').style.background = color1;
 	// document.getElementById('color2').style.background = color2;

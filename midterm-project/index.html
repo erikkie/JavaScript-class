@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erika Howell, midterm project</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> <!-- 'classic' theme -->  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> <!-- 'classic' theme -->
+    <!-- Color Pickr API created by: simonwep.github.io/pickr -->  
     <link rel="stylesheet" href="style.css">
     
 </head>
 
-<body onload = "colorDrop(), colorPalettes()">
-   
+<body onload = "colorDrop()">
+    <header>
+        <h1>Erika Howell 2022 Midterm Project</h1>
+    </header>
     <main class="container">
-        <p id="today"></p>
-        <p>&nbsp;</p>
-        <p id ="myDate"></p>
         <div class="row">
             <div class="col-4 buffer">
                 <div class="mobile" id="mobile-preview">
@@ -56,120 +56,132 @@
                     </div>
                 </div>
                 <div class="swatch-options">
-                    
-                    <!--color swatch area-->
-                    <div id="select1">
-                        <div class="row">
-                            <div class="col-1">
-                                <div class="color-picker"></div>
+                    <div class="col-4">
+                        <!--color swatch area-->
+                        <div id="select1">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="color-picker"></div>
+                                </div>
+                                <div class="col-9">
+                                    <p>Color Option 1</p>
+                                </div>
+                                
+                            </div> 
+                        </div>
+                        <!--color swatch area-->
+                        <div id="select2">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="color-picker2"></div>
+                                </div>
+                                <div class="col-9">
+                                    <p>Color Option 2</p>
+                                </div>
+                               
+                            </div> 
+                        </div>      
+                        <!--color swatch area-->
+                        <div id="select3">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="color-picker3"></div>
+                                </div>
+                                <div class="col-9">
+                                    <p>Color Option 3</p>
+                                </div>
+                               
                             </div>
-                            <div class="col-7">
-                                <p>Color Option 1</p>
-                            </div>
-                            <div class="col-3">
+                        </div>    
+                        <!--color swatch area-->
+                        <div id="select4">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="color-picker4"></div>
+                                </div>
+                                <div class="col-9">
+                                    <p>Color Option 4</p>
+                                </div>
                                 
                             </div>
-                        </div> 
-                    </div>
-                    <!--color swatch area-->
-                    <div id="select2">
-                        <div class="row">
-                            <div class="col-1">
-                                <div class="color-picker2"></div>
-                            </div>
-                            <div class="col-7">
-                                <p>Color Option 2</p>
-                            </div>
-                            <div class="col-3">
-                               
-                            </div>
-                        </div> 
-                    </div>      
-                    <!--color swatch area-->
-                    <div id="select3">
-                        <div class="row">
-                            <div class="col-1">
-                                <div class="color-picker3"></div>
-                            </div>
-                            <div class="col-7">
-                                <p>Color Option 3</p>
-                            </div>
-                            <div class="col-3">
+                        </div>
+                        <!--color swatch area-->
+                        <div id="select5">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="color-picker5"></div>
+                                </div>
+                                <div class="col-9">
+                                    <p>Color Option 5</p>
+                                </div>
                                
                             </div>
                         </div>
-                    </div>    
-                    <!--color swatch area-->
-                    <div id="select4">
-                        <div class="row">
-                            <div class="col-1">
-                                <div class="color-picker4"></div>
-                            </div>
-                            <div class="col-7">
-                                <p>Color Option 4</p>
-                            </div>
-                            <div class="col-3">
+                        <!--color swatch area-->
+                        <div id="select6">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="color-picker6"></div>
+                                </div>
+                                <div class="col-9">
+                                    <p>Color Option6</p>
+                                </div>
                                
                             </div>
                         </div>
                     </div>
-                     <!--color swatch area-->
-                     <div id="select5">
-                        <div class="row">
-                            <div class="col-1">
-                                <div class="color-picker5"></div>
+                    <div class="col-8">
+                        <div class="premade-palettes">
+                            <div class="row">
+                                <div class="col-6">
+                                        <h2>Beach Color Palette</h2>
+                                </div>
+                                <div class="col-6">
+                                        <button onclick="beach()">Load Palette</button>
+                                </div>
                             </div>
-                            <div class="col-7">
-                                <p>Color Option 5</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h2>Forest Color Palette</h2>
+                                </div>
+                                <div class="col-6">
+                                    <button onclick="forest()">Load Palette</button>
+                                </div>
                             </div>
-                            <div class="col-3">
-                               
+                            <div class="row">
+                                <div class="col-6">
+                                    <h2>Kaleidoscope Color Palette</h2>
+                                </div>
+                                <div class="col-6">
+                                    <button onclick="kaliedo()">Load Palette</button>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                     <!--color swatch area-->
-                     <div id="select6">
-                        <div class="row">
-                            <div class="col-1">
-                                <div class="color-picker6"></div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h2>Cabin Color Palette</h2>
+                                </div>
+                                <div class="col-6">
+                                    <button onclick="cabin()">Load Palette</button>
+                                </div>
                             </div>
-                            <div class="col-7">
-                                <p>Color Option6</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h2>Gas Station at Night Color Palette</h2>
+                                </div>
+                                <div class="col-6">
+                                    <button onclick="gas()">Load Palette</button>
+                                </div>
                             </div>
-                            <div class="col-3">
-                               
+                            <div class="row">
+                                <div class="col-6">
+                                    <h2>Waterfall Color Palette</h2>
+                                </div>
+                                <div class="col-6">
+                                    <button onclick="waterfall()">Load Palette</button>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="premade-palettes">
-                        <div class="row">
-                            <div class="col-4">
-                                <h2>Beach Palette</h2>
-                                <button onclick="choosePalette(1)" id="toggle1">Load</button>
-                            </div>
-                            <div class="col-4">
-                                <h2>Beach Palette</h2>
-                                <button onclick="choosePalette(2)" id="toggle1">Load</button>
-                            </div>
-                            <div class="col-4">
-                                <h2>Beach Palette</h2>
-                                <button onclick="choosePalette(3)" id="toggle1">Load</button>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4">
-                                <h2>Beach Palette</h2>
-                                <button onclick="choosePalette(4)" id="toggle1">Load</button>
-                            </div>
-                            <div class="col-4">
-                                <h2>Beach Palette</h2>
-                                <button onclick="choosePalette(5)" id="toggle1">Load</button>
-                            </div>
-                            <div class="col-4">
-                                <h2>Beach Palette</h2>
-                                <button onclick="choosePalette(6)" id="toggle1">Load</button>
-                            </div>
-                        </div>
+                            
+                        
                     </div>
                 </div>    
             </div>
