@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erika Howell, midterm project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> <!-- 'classic' theme -->  
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body onload = "colorDrop(), colorPalettes()">
+   
+    <main class="container">
+        <p id="today"></p>
+        <p>&nbsp;</p>
+        <p id ="myDate"></p>
+        <div class="row">
+            <div class="col-4 buffer">
+                <div class="mobile" id="mobile-preview">
+                    <div class="row" id="color1">color1</div>
+                    <div class="row" id="color2">color2</div>
+                    <div class="row" id="color3">color3</div>
+                    <div class="row" id="color4">color4 <br>
+                        <h1>Lorem Ipsum</h1>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula magna dolor, vel ornare sem laoreet ac. Donec vel nibh eget lacus dignissim consectetur a eget eros.<br><br>
+                        <h2>Lorem Ipsum</h2>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula magna dolor, vel ornare sem laoreet ac. Donec vel nibh eget lacus dignissim consectetur a eget eros. <br><br>
+                        <h3>Lorem Ipsum</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula magna dolor, vel ornare sem laoreet ac. Donec vel nibh eget lacus dignissim consectetur a eget eros.<br>
+
+
+                    </div> 
+                    <div class="row" id="color5">color5</div>
+                    <div class="row" id="color6">color6</div>
+                </div>
+            </div>
+            <div class="col-8 buffer">
+                <div class="row">
+                    <div class="col-9 buffer">
+                        <label for="selection">Color Palette Generator:</label>
+                        <select id="selection" name="selection" onchange = "showScreen()">
+                            <option value="1" >One Color</option>
+                            <option value="2">Two Colors</option>
+                            <option value="3">Three Colors</option>
+                            <option value="4">Four Colors</option>
+                            <option value="5">Five Colors</option>
+                            <option value="6">Six Colors</option>
+                        </select>
+
+                    </div>
+                    <div class="col-3 buffer">
+                        
+                    </div>
+                </div>
+                <div class="swatch-options">
+                    
+                    <!--color swatch area-->
+                    <div id="select1">
+                        <div class="row">
+                            <div class="col-1">
+                                <div class="color-picker"></div>
+                            </div>
+                            <div class="col-7">
+                                <p>Color Option 1</p>
+                            </div>
+                            <div class="col-3">
+                                
+                            </div>
+                        </div> 
+                    </div>
+                    <!--color swatch area-->
+                    <div id="select2">
+                        <div class="row">
+                            <div class="col-1">
+                                <div class="color-picker2"></div>
+                            </div>
+                            <div class="col-7">
+                                <p>Color Option 2</p>
+                            </div>
+                            <div class="col-3">
+                               
+                            </div>
+                        </div> 
+                    </div>      
+                    <!--color swatch area-->
+                    <div id="select3">
+                        <div class="row">
+                            <div class="col-1">
+                                <div class="color-picker3"></div>
+                            </div>
+                            <div class="col-7">
+                                <p>Color Option 3</p>
+                            </div>
+                            <div class="col-3">
+                               
+                            </div>
+                        </div>
+                    </div>    
+                    <!--color swatch area-->
+                    <div id="select4">
+                        <div class="row">
+                            <div class="col-1">
+                                <div class="color-picker4"></div>
+                            </div>
+                            <div class="col-7">
+                                <p>Color Option 4</p>
+                            </div>
+                            <div class="col-3">
+                               
+                            </div>
+                        </div>
+                    </div>
+                     <!--color swatch area-->
+                     <div id="select5">
+                        <div class="row">
+                            <div class="col-1">
+                                <div class="color-picker5"></div>
+                            </div>
+                            <div class="col-7">
+                                <p>Color Option 5</p>
+                            </div>
+                            <div class="col-3">
+                               
+                            </div>
+                        </div>
+                    </div>
+                     <!--color swatch area-->
+                     <div id="select6">
+                        <div class="row">
+                            <div class="col-1">
+                                <div class="color-picker6"></div>
+                            </div>
+                            <div class="col-7">
+                                <p>Color Option6</p>
+                            </div>
+                            <div class="col-3">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="premade-palettes">
+                        <div class="row">
+                            <div class="col-4">
+                                <h2>Beach Palette</h2>
+                                <button onclick="choosePalette(1)" id="toggle1">Load</button>
+                            </div>
+                            <div class="col-4">
+                                <h2>Beach Palette</h2>
+                                <button onclick="choosePalette(2)" id="toggle1">Load</button>
+                            </div>
+                            <div class="col-4">
+                                <h2>Beach Palette</h2>
+                                <button onclick="choosePalette(3)" id="toggle1">Load</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h2>Beach Palette</h2>
+                                <button onclick="choosePalette(4)" id="toggle1">Load</button>
+                            </div>
+                            <div class="col-4">
+                                <h2>Beach Palette</h2>
+                                <button onclick="choosePalette(5)" id="toggle1">Load</button>
+                            </div>
+                            <div class="col-4">
+                                <h2>Beach Palette</h2>
+                                <button onclick="choosePalette(6)" id="toggle1">Load</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            
+        </div>
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
